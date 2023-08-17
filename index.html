@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TicTacToe</title>
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main-box">
+    <h1>Tic Tac Toe</h1>
+    <h3>Choose your Icon</h3>
+    <input type="radio" id="html" name="fav_language" value="X" onclick="iconSelectorX(event)">
+    <label for="html">Player Icon X</label>
+    <input type="radio" id="css" name="fav_language" value="O" onclick="iconSelectorO(event)">
+    <label for="css">Player Icon O</label>
+    <!-- <p id="demo"> Winner is </p> -->
+    <div id="allgame" class="grid-container">
+      <div class='grid-item'>
+        <button id='btn0' value="0" onclick="gameOn(event)">0</button>
+        <button id='btn1' value="1" onclick="gameOn(event)">1</button>
+        <button id='btn2' value="2" onclick="gameOn(event)">2</button>
+      </div>
+      <div class='grid-item'>
+        <button id='btn3' value="3" onclick="gameOn(event)">3</button>
+        <button id='btn4' value="4" onclick="gameOn(event)">4</button>
+        <button id='btn5' value="5" onclick="gameOn(event)">5</button>
+      </div>
+      <div class='grid-item'>
+        <button id='btn6' value="6" onclick="gameOn(event)">6</button>
+        <button id='btn7' value="7" onclick="gameOn(event)">7</button>
+        <button id='btn8' value="8" onclick="gameOn(event)">8</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
